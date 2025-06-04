@@ -6,19 +6,19 @@ import {ExecuteTx} from "./components/ExecuteTx.tsx";
 import {CopyToClipboard} from "./components/CopyToClipboard.tsx";
 import {ZKLogin, useZKLogin} from "../../src";
 
-import backgroundImage from "./assets/bg.webp";
+ import backgroundImage from "./assets/bg.webp";
 
 // Example configuration
 const SUI_PROVER_ENDPOINT = 'https://prover-dev.mystenlabs.com/v1';
 
 const providers = {
     google: {
-        clientId: "648851101099-uit5tqa2gf0nr1vvpjorc87k2u4minip.apps.googleusercontent.com",
-        redirectURI: "https://demo.react-sui-zk-login.com",
+        clientId: "920729673147-m03h053cokfnk6763iol29fnlsa054qa.apps.googleusercontent.com",
+        redirectURI: "http://localhost:5174",
     },
     twitch: {
         clientId: "ltu7mhvfj4l04maulcjcqx1wm5e5zh",
-        redirectURI: "https://demo.react-sui-zk-login.com",
+        redirectURI: "http://localhost:5174",
     }
 }
 
@@ -31,7 +31,7 @@ export const Content = () => {
         if (encodedJwt) {
             // in real scenario
             // we can request server with jwt to generate user salt based on this jwt
-            // and associate jwt with user salt in a database
+            // and associate jwt with user salt in a databased
             // bonus - send user salt to user email on your server for safe
             const requestMock = new Promise(
                 (resolve): void =>

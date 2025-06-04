@@ -1,4 +1,4 @@
-import {SuiClient} from '@mysten/sui/client';
+import {SuiClient} from '../../src'; // Ensure this import matches the one used in ZKLoginProvider
 
 import {Content} from "./Content.tsx";
 import {ZKLoginProvider} from '../../src';
